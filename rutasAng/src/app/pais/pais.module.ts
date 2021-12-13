@@ -7,6 +7,7 @@ import { VerPaisComponent } from './pages/ver-pais/ver-pais.component';
 import { PaisService } from './service/pais.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { TablaComponent } from './components/tabla/tabla.component';
 
 
 
@@ -15,7 +16,8 @@ import { HttpClient } from '@angular/common/http';
     PorCapitalComponent,
     PorPaisComponent,
     PorRegionComponent,
-    VerPaisComponent
+    VerPaisComponent,
+    TablaComponent
     
   ], exports: [
     PorCapitalComponent,
@@ -25,7 +27,8 @@ import { HttpClient } from '@angular/common/http';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+  
   ]
 })
 export class PaisModule { }

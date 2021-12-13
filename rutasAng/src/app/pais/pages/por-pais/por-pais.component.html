@@ -1,8 +1,18 @@
-<p>Por pais</p>
+<h1>Búsqueda por país:</h1>
 
-<form (ngSubmit)="getPaises()">
-
-    <input type="text"  name="paisBuscado" [(ngModel)]="paisBuscado" >
+<div class="row">
 
 
-</form>
+
+    <form (ngSubmit)="getPaises()">
+        
+        <input type="text"  name="paisBuscado" [(ngModel)]="paisBuscado" >
+        
+        
+    </form>
+</div>
+
+<div class="row">
+
+<app-tabla></app-tabla>
+</div>
